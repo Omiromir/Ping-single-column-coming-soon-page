@@ -10,11 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showError(message) {
     emailInput.classList.add('error');
-    emailInput.classList.add('shake'); // Add shake animation
+    emailInput.classList.add('shake'); 
     errorMsg.textContent = message;
     errorMsg.classList.add('show');
 
-    // Remove shake class after animation completes
     setTimeout(() => {
       emailInput.classList.remove('shake');
     }, 500);
